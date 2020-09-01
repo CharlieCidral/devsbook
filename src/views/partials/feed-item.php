@@ -5,7 +5,7 @@
                 <a href=""><img src="media/avatars/avatar.jpg" /></a>
             </div>
             <div class="feed-item-head-info">
-                <a href=""><span class="fidi-name">Bonieky Lacerda</span></a>
+                <a href=""><span class="fidi-name">Fulano de tal</span></a>
                 <span class="fidi-action">fez um post</span>
                 <br/>
                 <span class="fidi-date">07/03/2020</span>
