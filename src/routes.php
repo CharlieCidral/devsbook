@@ -24,14 +24,12 @@ $router->get('/perfil', 'ProfileController@index');
 $router->get('/amigos', 'ProfileController@friends');
 $router->get('/fotos', 'ProfileController@photos');
 
+$router->get('/pesquisa', 'SearchController@index');
+
 
 $router->get('/sair', 'LoginController@logout');
 
 
 
-//$router->get('pesquisa');
 
-//$router->get('/sair');
-//$router->get('/amigos');
-//$router->get('/fotos');
 //$router->get('/config');
