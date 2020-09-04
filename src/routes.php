@@ -1,5 +1,6 @@
 <?php
 use core\Router;
+use src\controllers\LoginController;
 
 $router = new Router();
 
@@ -15,6 +16,9 @@ $router->post('/post/new', 'PostController@new');
 
 $router->get('/perfil/{id}', 'ProfileController@index');
 $router->get('/perfil', 'ProfileController@index');
+
+$router->get('/sair', 'LoginController@logout');
+
 
 
 //$router->get('pesquisa');
