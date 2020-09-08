@@ -29,6 +29,8 @@ $router->get('/pesquisa', 'SearchController@index');
 
 $router->get('/sair', 'LoginController@logout');
 
+$router->post('/configuracoes', 'SettingsController@save');
+$router->get('/configuracoes', 'SettingsController@index');
 
 
 
