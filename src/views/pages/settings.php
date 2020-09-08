@@ -1,5 +1,6 @@
 <?=$render('header', ['loggedUser'=>$loggedUser]);?>
 
+
 <section class="container main">
     <?=$render('sidebar', ['activeMenu'=>'settings']);?>
 
@@ -26,25 +27,25 @@
 
                         <hr class="config table"/>
                             <label> Nome Completo: <span>*</span><br/> 
-                                <input placeholder="Nome completo" class="input" type="text" name="name" />
+                                <input placeholder="<?=$user->name;?>" class="input" type="text" name="name" />
                             </label><br/>
                             <label>Email: <span>*</span><br/>
-                                <input placeholder="Seu E-mail" class="input" type="email" name="email" />
+                                <input placeholder="Alterar email" class="input" type="email" name="email" />
                             </label><br/>
                             <label>Nova senha: <br/>
                                 <input placeholder="Digite sua Senha" class="input" type="password" name="password" />
                             </label><br/>
                             <label>Confirmar nova senha:<br/> 
-                                <input placeholder="Confirme sua Senha" class="input" type="password" name="passwordConfirm" />
+                                <input placeholder="Confirme sua Senha" class="input" type="password" name="password_confirm" />
                             </label><br/>
                             <label>Data de nascimento:<br/> 
-                                <input placeholder="Alterar data de Nascimento" class="input" type="date" name="birthdate" id="birthdate" />
+                                <input class="input" type="date" name="birthdate" id="birthdate" />
                             </label><br/>
                             <label>Cidade:<br/>
-                                <input placeholder="Onde voce mora" class="input" type="text" name="city" />
+                                <input placeholder="<?= $user->city;?>" class="input" type="text" name="city" />
                             </label><br/>
                             <label>Trabalho:<br/> 
-                                <input placeholder="Digite onde trabalha" class="input" type="text" name="work" />
+                                <input placeholder="<?= $user->work;?>" class="input" type="text" name="work" />
                             </label><br/>
                                 <input class="button" type="submit" value="Salvar" name="save" />
                         </hr>

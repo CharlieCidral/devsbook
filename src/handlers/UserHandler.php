@@ -165,17 +165,16 @@ class UserHandler {
         return $users;
     }
 
-    public static function updateUser($updateFields, $id) {
-        $updateFields = User::update()
-        ->set('name')
-        ->set('birthdate')
-        ->set('city')
-        ->set('work')
-        ->set('email')
-        ->set('password')
-        ->where('id', $id)
-        ->execute();
-        
+    public static function updateUser($updateFields, $userId) {
+        User::update([
+        $updateFields['email'],
+        $updateFields['password'],
+        $updateFields['name'],
+        $updateFields['city'],
+        $updateFields['work'],
+        ])
+        ->where('id', $userId)
+        ->execute();        
 
     }
 }
