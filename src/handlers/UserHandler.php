@@ -166,13 +166,7 @@ class UserHandler {
     }
 
     public static function updateUser($updateFields, $userId) {
-        User::update([
-        $updateFields['email'],
-        $updateFields['password'],
-        $updateFields['name'],
-        $updateFields['city'],
-        $updateFields['work'],
-        ])
+        User::update($updateFields)
         ->where('id', $userId)
         ->execute();        
 

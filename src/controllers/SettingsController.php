@@ -56,14 +56,16 @@ class SettingsController extends Controller {
 
 
             if(!empty($password)) {
+                $hash = password_hash($password, PASSWORD_DEFAULT);
                 if($password === $passwordConfirm) {
-                    $updateFields['password'] = $password;
+                    $updateFields['password'] = $hash;
                 } else {
                     $_SESSION['flash'] = 'As senhas não batem.';
                     $this->redirect('/configuracoes');
                 }
             }
 
+            $updateFields['birthdate'] = $birthdate;
             $updateFields['name'] = $name;
             $updateFields['city'] = $city;
             $updateFields['work'] = $work;
