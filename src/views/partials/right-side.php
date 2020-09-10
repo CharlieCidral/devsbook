@@ -6,8 +6,8 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <a href=""><img src="https://alunos.b7web.com.br/media/courses/php-nivel-1.jpg" /></a>
-                        <a href=""><img src="https://alunos.b7web.com.br/media/courses/laravel-nivel-1.jpg" /></a>
+                        <a href="https://www.nike.com.br/"><img src="<?=$base;?>/media/uploads/nk.jpg" /></a>
+                        <a href="https://www.apple.com/"><img src="<?=$base;?>/media/uploads/apple.jpg" /></a>
                     </div>
                 </div>
                 <div class="box">
