@@ -33,7 +33,7 @@ $router->post('/configuracoes', 'SettingsController@save');
 $router->get('/configuracoes', 'SettingsController@index');
 
 $router->get('/ajax/like/{id}', 'AjaxController@like');
-
+$router->post('/ajax/comment', 'AjaxController@comment');
 
 
 //$router->get('/config');
