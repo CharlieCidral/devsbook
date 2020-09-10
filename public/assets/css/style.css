@@ -220,6 +220,12 @@ header .head-side {
     flex:none;
     width:250px;
 }
+.config-form .config-avatar {
+    max-width: 150PX;
+}
+.config-form .config-cover {
+    max-width: 300PX;
+}
 
 
 .feed-new-editor {

@@ -12,17 +12,19 @@
             <h2>Alterar informações do Perfil</h2>
 
                 <section class="container-main">
-                    <form method="POST" action="<?=$base;?>/configuracoes">
                         <?php if(!empty($flash)): ?>
                         <div class="flash"><?php echo $flash; ?></div>
                         <?php endif; ?>
 
+                    <form class="config-form" method="POST" enctype="multipart/form-data" action="<?=$base;?>/configuracoes">
+                        
+
                         <label>Avatar: </label>
                         <input type="file" name="avatar"/>
-                        <img src="<?=$base;?>/media/avatars/<?=$userInfo->avatar;?>" class="mini"/><br/>
+                        <img src="<?=$base;?>/media/avatars/<?=$user->avatar; ?>" class="config-avatar"/><br/>
                         <label>Capa: </label>
                         <input type="file" name="cover"/>
-                        <img src="<?=$base;?>/media/covers/<?=$userInfo->cover;?>" class="mini"/>
+                        <img src="<?=$base;?>/media/covers/<?=$user->cover; ?>" class="config-cover"/>
 
 
                         <hr class="config table"/>
